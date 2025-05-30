@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === HEADER === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f3b900;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.cart {
+    font-size: 1.2rem;
+}
+
+/* === HERO === */
+.hero {
+    background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #111;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    background-color: #f3b900;
+    color: black;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* === PRODUCTS === */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product-card {
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 0.8rem 0;
+}
+
+.product-card button {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f3f3f3;
+    color: #555;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin: 1rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .products {
+        padding: 1rem;
+    }
+
+    .product-card {
+        padding: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
